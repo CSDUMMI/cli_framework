@@ -6,15 +6,15 @@ class App(CLI.CLI):
     and help here
     """
     def __init__(self):
-        super().__init__('app.json','add','list','remove')
+        super().__init__('app.json','add','remove','list')
 
     def add(self,args):
         name = args[0]
         balance = args[1]
         self.state[name] = balance
 
-    def remove(self,name):
-        name = name[0]
+    def remove(self,args):
+        name = args[0]
         del self.state[name]
 
     def list(self,*args):

@@ -6,7 +6,7 @@ class App(CLI.CLI):
     and help here
     """
     def __init__(self):
-        super().__init__('app.json',['add','list','remove'])
+        super().__init__('app.json','add','list','remove')
 
     def add(self,args):
         name = args[0]
@@ -17,7 +17,7 @@ class App(CLI.CLI):
         name = name[0]
         del self.state[name]
 
-    def list(self,args):
+    def list(self,*args):
         for i in self.state.keys():
             print("Name: {}\nBalance: {}".format(i,self.state[i]))
 

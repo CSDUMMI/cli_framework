@@ -71,5 +71,11 @@ class App(CLI):
   """
   ...
 ```
+Then you can use execute the CLI with this:
+```python
+if __name__ == '__main__':
+  app = App() # Create Instance of CLI App
+  app.run() # Execute Commandline Parsing
+```
 I hope this helped you and you can implement your own CL Apps or interfaces
 soon.

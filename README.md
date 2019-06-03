@@ -2,11 +2,19 @@
 # cli_framework
 A Framework to make it easier for myself to develop small cli apps
 
+# Install
+This project can be installed using
+pip:
+```bash
+pip3 install CLI-csdummi
+```
+
 # An example implementation
-To implement this with CLI.py.
-You import the `CLI` class from `CLI.py`:
+To implement your own CLI app
+with this library you have to import the
+class CLI like this:
 ```python
-from CLI import CLI
+from CLI.CLI import CLI
 ```
 
 Then you define a class that inherits

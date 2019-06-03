@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="CLI-csdummi",
-    version="1.0.0",
+    version="1.0.1",
     author="Joris Gutjahr",
     author_email="joris.gutjahr@gmail.com",
     description="A framework to write CLI projects.",

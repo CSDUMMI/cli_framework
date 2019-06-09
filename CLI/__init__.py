@@ -1,2 +1,2 @@
-name = "example_pkg"
+name = "CLI"
 __all__ = ['CLI']

@@ -8,7 +8,7 @@ class CLI:
     Every app has a JSON file with
     all important data and they can load it
     """
-    def __init__(self,file,directory="",*commands):
+    def __init__(self,file,*commands,directory=""):
         if file != '':
             # state,
             self.state = json.load(open(directory+file))
